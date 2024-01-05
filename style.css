@@ -1,0 +1,113 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+/* UNIVERSAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root{
+    /* COLORS */
+    --PRIMARYBACKGROUNDCOLOR: white;
+    --PRIMARYCOLOR: black;
+    --STYLEBUTTONCOLOR: blue;
+}
+
+
+/* GENERAL STYLES */
+html{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+button,input[type="text"]{
+    font-family: inherit;
+}
+
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--PRIMARYBACKGROUNDCOLOR);
+}
+
+.container{
+    max-width: 300px;
+    width: 100%;
+    background-color: lightgray;
+    box-shadow: 0px 5px 5px var(--PRIMARYCOLOR);
+    padding: 1rem;
+    z-index: 11;
+}
+
+.output{
+    width: 100%;
+    word-wrap: break-word;
+    padding: 1rem;
+    text-align: right;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--PRIMARYCOLOR);
+    background-color: var(--PRIMARYBACKGROUNDCOLOR);
+    margin-bottom: 0.3rem;
+}
+
+
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+.buttons button{
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    
+}
+
+button[data-number]{
+    color: var(--PRIMARYCOLOR);
+    background-color: var(--PRIMARYBACKGROUNDCOLOR);
+}
+
+.spantwo{
+    grid-row: span 3;
+}
+
+.buttons button:active{
+    transform: scale(0.99);
+}
+
+.operator{
+    color: var(--STYLEBUTTONCOLOR);
+}
+
+
+.toggleMode{
+    position: absolute;
+    bottom: 1px;
+    padding: 0.25rem 2rem;
+    color: var(--PRIMARYBACKGROUNDCOLOR);
+    background-color: var(--PRIMARYCOLOR);
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 3px var(--PRIMARYCOLOR);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.dark{
+    --PRIMARYBACKGROUNDCOLOR: black;
+    --PRIMARYCOLOR: white;
+    --STYLEBUTTONCOLOR: blue;
+}
