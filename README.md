@@ -12,10 +12,10 @@ A simple web-based calculator application with basic arithmetic operations and a
 - [License](#license)
 
 ## Screenshots
--Screenshot 1[Light Mode]
-<img src="screenshots/screenshot1.PNG" width="250"/>
--Screenshot 2[Dark Mode]
--<img src="screenshots/screenshot2.PNG" width="250"/>
+1. Screenshot 1[Light Mode]
+<img src="screenshots/screenshot1.PNG" width="350"/>
+2. Screenshot 2[Dark Mode]
+<img src="screenshots/screenshot2.PNG" width="350"/>
 
 ## Features
 
